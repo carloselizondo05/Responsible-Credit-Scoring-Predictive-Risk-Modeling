@@ -1,0 +1,4 @@
+data/raw/
+*.csv
+*.db
+.ipynb_checkpoints/
