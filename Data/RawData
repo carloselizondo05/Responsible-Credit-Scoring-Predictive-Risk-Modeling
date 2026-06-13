@@ -1,0 +1,6 @@
+## Raw Data Link
+
+This project pulls the raw dataset directly via the Kaggle API during the notebook runtime. 
+
+If you would like to view the data dictionary or explore the dataset manually, you can find it here:
+[Home Credit Default Risk - Kaggle Competition](https://www.kaggle.com/c/home-credit-default-risk)
