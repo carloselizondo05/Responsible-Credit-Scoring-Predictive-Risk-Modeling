@@ -118,20 +118,26 @@ Stage 6 — Dual-Model Fairness Audit
 
 ```
 ├── data/
-│   ├── raw/               # Place Kaggle CSVs here (not tracked by git)
+│   ├── raw/               # Kaggle link to the data used in project
 │   └── processed/         # Aggregated flat table output from Stage 1
 ├── notebooks/
-│   ├── 01_ingestion.ipynb
-│   ├── 02_cleaning.ipynb
-│   ├── 03_feature_selection.ipynb
-│   ├── 04_model_tournament.ipynb
-│   ├── 05_segmentation.ipynb
-│   └── 06_fairness_audit.ipynb
+│   ├── 01_Feature_Selection_&_Relational_Aggregation.ipynb
+│   ├── 02_EDA_Report.ipynb
+│   ├── 03_Consensus_Feature_Selection
+│   ├── 04_Model_Tournament.ipynb
+│   ├── 05_Segmentation.ipynb
+│   └── 06_Fairness_Audit.ipynb
 ├── outputs/
 │   ├── figures/           # SHAP plots, confusion matrices, ROC curves
 │   └── tables/            # Voting table, fairness metrics, model comparison
 ├── docs/
-│   └── milestone_1_design.pdf
+│   └── Milestone 1: Design.pdf
+│   └── Milestone 2: Architecture and Data Audit.pdf
+│   └── Milestone 3: Initial Results and Coding.pdf
+│   └── Milestone 4: Final Results and Report.pdf
+│   └── Milestone 5: Final Presentation and Demo.pdf
+│   └── Journal.pdf
+│   └── Literature Review.pdf
 ├── .gitignore
 └── README.md
 ```
