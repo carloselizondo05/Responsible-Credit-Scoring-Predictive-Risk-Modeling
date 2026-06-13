@@ -130,6 +130,7 @@ Stage 6 — Dual-Model Fairness Audit
 ├── outputs/
 │   ├── figures/           # SHAP plots, confusion matrices, ROC curves
 │   └── tables/            # Voting table, fairness metrics, model comparison
+│   └── EDA reports/
 ├── docs/
 │   └── Milestone 1: Design.pdf
 │   └── Milestone 2: Architecture and Data Audit.pdf
