@@ -117,24 +117,41 @@ Stage 6 — Dual-Model Fairness Audit
 
 ## Repository Structure
 
-```
+``````
+
 ├── data/
+
 │   ├── raw/               # Place Kaggle CSVs here (not tracked by git)
+
 │   └── processed/         # Aggregated flat table output from Stage 1
+
 ├── notebooks/
+
 │   ├── 01_ingestion.ipynb
+
 │   ├── 02_cleaning.ipynb
+
 │   ├── 03_feature_selection.ipynb
+
 │   ├── 04_model_tournament.ipynb
+
 │   ├── 05_segmentation.ipynb
+
 │   └── 06_fairness_audit.ipynb
+
 ├── outputs/
+
 │   ├── figures/           # SHAP plots, confusion matrices, ROC curves
+
 │   └── tables/            # Voting table, fairness metrics, model comparison
+
 ├── docs/
+
 │   └── milestone_1_design.pdf
+
 ├── .gitignore
-└── README.md
+
+└── README.md 
 
 ---
 
