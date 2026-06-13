@@ -135,8 +135,6 @@ Stage 6 — Dual-Model Fairness Audit
 │   └── milestone_1_design.pdf
 ├── .gitignore
 └── README.md
-```
-
 ---
 
 ## Regulatory Context
