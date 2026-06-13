@@ -16,13 +16,13 @@ The central deliverable is not just a prediction — it is a **dual-model audit*
 ## Research Questions
 
 **RQ1 — Exploratory (Feature Significance)**  
-When a formal credit score is unavailable, which combination of behavioral indicators (payment history, installment patterns, credit bureau records) and traditional demographic features (income type, occupation) best predicts loan default risk among thin-file applicants?
+For consumer loan applicants who lack a formal credit score, which combination of behavioral indicators — such as payment history, installment patterns, and bureau records — alongside demographic features most reliably signals default risk, and what does that tell a lending team about how to evaluate thin-file applicants?
 
 **RQ2 — Predictive (Consensus Feature Selection)**  
-Does a consensus feature selection framework — combining importance rankings from Chi-Squared tests, Pearson Correlation, Multiple Linear Regression, Naive Bayes, Decision Tree, and Random Forest into a voting table — improve the predictive performance of Decision Tree, Naive Bayes, and Random Forest models compared to their all-feature baselines, as measured by accuracy, precision, recall, F1-score, AUC-ROC, and confusion matrix outcomes?
+Using behavioral and demographic data available at the time of application, can we build a model that predicts each applicant's probability of default with enough precision to assign them to one of four lending tiers — low risk (0–10%), medium risk (10–25%), high risk (25–40%), or decline (40%+) — where each tier corresponds to a differentiated interest rate reflecting the actual risk the bank is absorbing?
 
 **RQ3 — Prescriptive (Responsible Credit Scoring)**  
-When the optimized consensus model is constrained to exclude features that function as proxies for protected characteristics under the Canadian Human Rights Act (age, gender, marital status, family status), how does its predictive performance compare to the unconstrained model, and what does the fairness trade-off — measured by Demographic Parity and Equalized Odds — reveal about the cost of responsible lending?
+When the risk-tiering model is constrained to exclude features that act as proxies for protected characteristics under the Canadian Human Rights Act, how does its predictive performance change — and can an interest rate cap at 35% APR (Criminal Code, s.347) be applied so that no approved applicant receives a rate that would place them in unsustainable debt, even if that means reclassifying some high-risk applicants as declines?
 
 ---
 
@@ -141,8 +141,8 @@ Protected characteristics under the **Canadian Human Rights Act** that guide the
 | Milestone | Status |
 |---|---|
 | Milestone 1 — Project Design | ✅ Complete |
-| Milestone 2 — Data Preparation & EDA | 🔄 In progress |
-| Milestone 3 — Modeling & Results | ⏳ Upcoming |
+| Milestone 2 — Data Preparation & EDA | ✅ Complete |
+| Milestone 3 — Modeling & Results | 🔄 In progress |
 | Milestone 4 — Final Report | ⏳ Upcoming |
 
 ---
