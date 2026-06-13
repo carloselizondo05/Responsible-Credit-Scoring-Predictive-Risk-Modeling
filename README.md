@@ -47,7 +47,7 @@ Owner: Home Credit Group | License: Non-commercial academic use
 ---
 
 ## Technical Pipeline
-
+```
 Stage 1 — Data Ingestion & Relational Aggregation
   └── SQLite joins across 7 tables on SK_ID_CURR
   └── GROUP BY aggregations → 47 behavioral features per applicant
@@ -97,7 +97,7 @@ Stage 6 — Dual-Model Fairness Audit
       Disparate Impact Ratio (minimum 0.80 threshold)
   └── SHAP global summary + local force plots for both models
   └── Proxy leakage check: OCCUPATION_TYPE flagged for review```
-
+```
 ---
 
 ## Tools & Environment
