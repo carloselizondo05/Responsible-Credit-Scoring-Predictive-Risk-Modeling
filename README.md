@@ -51,38 +51,53 @@ Owner: Home Credit Group | License: Non-commercial academic use
 ```
 Stage 1 — Data Ingestion & Relational Aggregation
   └── SQLite joins across 7 tables on SK_ID_CURR
-  └── GROUP BY aggregations → behavioral features per applicant
-  └── Temporal leakage filter (records predating DAYS_DECISION only)
+  └── GROUP BY aggregations → 47 behavioral features per applicant
+  └── Deliberate feature exclusions: housing block (~40 cols), 
+      document flags (FLAG_DOCUMENT_2–21), contact flags dropped
 
 Stage 2 — Data Cleaning & Feature Engineering
-  └── DAYS_EMPLOYED anomaly correction (365,243 placeholder)
-  └── OWN_CAR_AGE / FLAG_OWN_CAR cross-reference imputation
-  └── EXT_SOURCE two-stage imputation + missingness flags
-  └── Composite features: Debt-to-Income Ratio, Payment-to-Annuity Ratio
+  └── DAYS_EMPLOYED anomaly correction (365,243 → NaN, then imputed)
+  └── EXT_SOURCE_1/3: median imputation + binary missingness flags added
+  └── Composite features: Debt-to-Income Ratio, Annuity-to-Income Ratio,
+      Credit-to-Goods Ratio, AGE_YEARS, EMPLOYED_YEARS
   └── Proxy correlation audit (r > 0.70 threshold)
+  └── Confirmed: OCCUPATION_TYPE highly correlated with CODE_GENDER
+      → flagged as ethics risk for Stage 6
 
 Stage 3 — Consensus Feature Selection
   └── 6-method voting table: Chi-Squared, Pearson, MLR, NB, DT, RF
   └── Features retained only on majority consensus
+  └── Protected attributes (CODE_GENDER, DAYS_BIRTH) excluded from 
+      model input, retained for fairness audit only
 
-Stage 4 — Supervised Learning: Model Tournament
-  └── Models: Naive Bayes, Decision Tree, Random Forest, Logistic Regression
+Stage 4 — Supervised Learning: Risk Tier Assignment
+  └── Models: Logistic Regression (baseline), Naive Bayes, 
+      Decision Tree, Random Forest
+  └── Output: default probability score per applicant
+  └── Four-tier assignment: Low (0–10%), Medium (10–25%), 
+      High (25–40%), Decline (40%+)
+  └── Interest rate cap: 35% APR maximum (Criminal Code, s.347)
+      applied — high-risk applicants exceeding cap reclassified as Decline
   └── Full feature set vs. consensus feature set (before/after comparison)
-  └── class_weight='balanced' for imbalanced classes
+  └── class_weight='balanced' for 92/8 class imbalance
   └── Metrics: AUC-ROC, F1-Score, pAUC@FPR<0.1, Precision-Recall curves
 
 Stage 5 — Unsupervised Learning: Customer Segmentation
   └── K-Means clustering on applicant pool
   └── Cluster count: Elbow Method + Silhouette Score
   └── Risk persona profiling and labeling
+  └── Stratified cluster analysis: default rate per cluster,
+      demographic composition, behavioral feature means
 
 Stage 6 — Dual-Model Fairness Audit
   └── Model A: Unconstrained (full consensus feature set)
-  └── Model B: Ethically constrained (proxies removed, threshold calibrated)
-  └── Fairness metrics: Demographic Parity, Equalized Odds, Disparate Impact Ratio
-  └── SHAP summary + force plots for both models
-  └── Proxy leakage detection on high-SHAP remaining features
-```
+  └── Model B: Ethically constrained (proxies removed per Canadian 
+      Human Rights Act — age, gender, marital status, family status)
+  └── Interest rate predatory cap enforced in Model B
+  └── Fairness metrics: Demographic Parity, Equalized Odds, 
+      Disparate Impact Ratio (minimum 0.80 threshold)
+  └── SHAP global summary + local force plots for both models
+  └── Proxy leakage check: OCCUPATION_TYPE flagged for review```
 
 ---
 
