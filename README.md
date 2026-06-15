@@ -127,18 +127,18 @@ Stage 6 — Dual-Model Fairness Audit
 │   ├── 04_Model_Tournament.ipynb
 │   ├── 05_Segmentation.ipynb
 │   └── 06_Fairness_Audit.ipynb
-├── outputs/
-│   ├── figures/           # SHAP plots, confusion matrices, ROC curves
-│   └── tables/            # Voting table, fairness metrics, model comparison
+├── Outputs/
+│   ├── Figures/           # SHAP plots, confusion matrices, ROC curves
+│   └── Tables/            # Voting table, fairness metrics, model comparison
 │   └── EDA reports/
-├── docs/
+├── Docs/
 │   └── Milestone 1: Design.pdf
 │   └── Milestone 2: Architecture and Data Audit.pdf
 │   └── Milestone 3: Initial Results and Coding.pdf
 │   └── Milestone 4: Final Results and Report.pdf
 │   └── Milestone 5: Final Presentation and Demo.pdf
 │   └── Journal.pdf
-│   └── Literature Review.pdf
+│   └── AI Journal.pdf
 ├── .gitignore
 └── README.md
 ```
