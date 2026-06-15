@@ -142,7 +142,18 @@ Stage 6 — Dual-Model Fairness Audit
 ├── .gitignore
 └── README.md
 ```
+## EDA Reports
+Due to file size limits, EDA reports are hosted externally:
+- [YData Profiling Report](https://drive.google.com/file/d/1xR8hVg6rj513P6TEtoJZGlzKfBRtgveo/view?usp=sharing) — Full automated profiling (Google Drive)
+- [SweetViz Comparison Report](https://drive.google.com/file/d/114bQMF8pew9wggJWO1e13_MUBsXHeHv3/view?usp=sharing) — Defaulter vs repaid comparison (Google Drive)
 
+## Notebooks
+Notebooks are hosted on Google Colab (public access):
+- [01 - Feature Selection & Relational Aggregation](https://colab.research.google.com/drive/1qXGVmgSG6hwApMIzogeSpWi_3wArz03L?usp=sharing)
+- [02 - EDA Report](https://colab.research.google.com/drive/1krCPjElX9ODE21Ygg3mYrwhHaa61sTUy?usp=sharing)
+
+## GitHub Repository
+Raw files and documentation: https://github.com/carloselizondo05/Responsible-Credit-Scoring-Predictive-Risk-Modeling
 ---
 
 ## Regulatory Context
