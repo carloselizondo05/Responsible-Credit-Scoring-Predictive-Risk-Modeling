@@ -168,8 +168,8 @@ See `requirements.txt` for exact package versions.
 |   |-- Milestone_1.md
 |   |-- Milestone_2.md
 |   |-- Milestone_3.md
-|   |-- Milestone_4.md       # Final report
-|   |-- Milestone 5/         # In progress — presentation
+|   |-- Milestone_4.md       # Final Report
+|   |-- Milestone 5.md       # Final Presentation
 |   |-- Project Journal.md
 |   |-- AI Journal.md
 |   |-- Prof_Meeting.md
@@ -259,7 +259,7 @@ The dataset is not Canadian; Canadian law is applied here as a design constraint
 | Milestone 2 — Architecture & Data Audit | Complete |
 | Milestone 3 — Initial Results & Coding | Complete |
 | Milestone 4 — Final Results & Report | Complete |
-| Milestone 5 — Final Presentation & Demo | In progress |
+| Milestone 5 — Final Presentation & Demo | Complete|
 
 ---
 
