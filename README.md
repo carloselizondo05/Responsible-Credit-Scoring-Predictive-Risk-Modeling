@@ -218,20 +218,20 @@ See `requirements.txt` for exact package versions.
 ## Notebooks
 
 Notebooks are hosted on Google Colab (public access):
-- 01 - Feature Selection & Relational Aggregation: https://colab.research.google.com/drive/1qXGVmgSG6hwApMIzogeSpWi_3wArz03L?usp=sharing
-- 02 - EDA Report: https://colab.research.google.com/drive/1krCPjElX9ODE21Ygg3mYrwhHaa61sTUy?usp=sharing
-- 03 - Baseline Modeling (Post-Feedback, Leakage-Safe): https://colab.research.google.com/drive/1SnDJ_Tv7wUszstMdAHpsSNQAsN8ppwex?usp=sharing
-- 04 - Final Analysis: https://colab.research.google.com/drive/1gNBHM8wug1B_zcbZisi7FLx6tAvNWwel?usp=sharing
+- (01_Feature Selection & Relational Aggregation)[https://colab.research.google.com/drive/1qXGVmgSG6hwApMIzogeSpWi_3wArz03L?usp=sharing]
+- (02_EDA Report)[https://colab.research.google.com/drive/1krCPjElX9ODE21Ygg3mYrwhHaa61sTUy?usp=sharing]
+- (03_Baseline Modeling(Post-Feedback, Leakage-Safe))[https://colab.research.google.com/drive/1SnDJ_Tv7wUszstMdAHpsSNQAsN8ppwex?usp=sharing]
+- (04_Final Analysis)[https://colab.research.google.com/drive/1gNBHM8wug1B_zcbZisi7FLx6tAvNWwel?usp=sharing]
 
 ## EDA Reports
 
 Due to file size limits, EDA reports are hosted externally:
-- YData Profiling Report: https://drive.google.com/file/d/1xR8hVg6rj513P6TEtoJZGlzKfBRtgveo/view?usp=sharing
-- SweetViz Comparison Report: https://drive.google.com/file/d/114bQMF8pew9wggJWO1e13_MUBsXHeHv3/view?usp=sharing
+- (YData Profiling Report)[https://drive.google.com/file/d/1xR8hVg6rj513P6TEtoJZGlzKfBRtgveo/view?usp=sharing]
+- (SweetViz Comparison Report)[https://drive.google.com/file/d/114bQMF8pew9wggJWO1e13_MUBsXHeHv3/view?usp=sharing]
 
 ## GitHub Repository
 
-Raw files and documentation: https://github.com/carloselizondo05/Responsible-Credit-Scoring-Predictive-Risk-Modeling
+(Raw files and documentation)[https://github.com/carloselizondo05/Responsible-Credit-Scoring-Predictive-Risk-Modeling]
 
 ---
 
